@@ -1,0 +1,674 @@
+
+            /*                      REMOVE DEFAULT SLIDER CSS                         */
+
+input[type=range] {
+    /*overflow: hidden;*/
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+
+
+                /*                      PREFERENCE SLIDERS:                   ;*/
+
+
+/*pref-slider Google Chrome*/
+.pref-slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #00b1dc;
+  cursor: pointer;
+  margin-top: -7px; 
+  
+}
+.pref-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px lightgray;
+  background: white;
+}
+
+
+
+/*pref-slider FireFox*/
+.pref-slider::-moz-range-thumb {
+  height: 22px;
+  width: 22px;
+  border-radius: 11px;
+  background: #00b1dc;
+  cursor: pointer;
+}
+
+.pref-slider::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px lightgray;
+  background: #00b1dc;
+}
+
+
+/*pref-slider IE*/
+.pref-slider::-ms-thumb {
+  height: 22px;
+  width: 22px;
+  border-radius: 11px;
+  background: #00b1dc;
+  cursor: pointer;
+}
+
+.pref-slider::-ms-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+.pref-slider::-ms-fill-lower {
+  background: #00b1dc;
+  box-shadow: 0px 0px 4px lightgray;
+}
+
+.pref-slider::-ms-fill-upper {
+  background: white;
+  box-shadow: 0px 0px 4px lightgray;
+}
+
+.slider-preferences {
+    width: 45%;
+    margin: 2.5%;
+    margin-bottom: 0px;
+    display: inline-block;
+    text-align: left
+}
+
+.pref-slider {
+    display: inline-block;
+    width: 100%;  
+}
+
+.pref-title {
+    font-size: 1.2em;
+    font-family: 'PT sans', sans-serif;
+    margin-left: 2.5%;
+}
+
+.pref-footer-left {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: inline-block;
+    font-size: .9em;
+    font-family: 'PT sans', sans-serif;
+}
+.pref-footer-right {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    float: right;
+    font-size: .9em;
+    font-family: 'PT sans', sans-serif;
+}
+
+
+
+
+
+
+                    /*          PROFILE SLIDERS        */
+
+
+.slide-1::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #dec300;
+  cursor: pointer;
+  margin-top: -8px; 
+  
+}
+.slide-1::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px lightgray;
+  background: #dec300;
+  border-radius: 1.3px;
+}
+
+.mustsee-color {
+    color: #dec300;
+}
+
+.slide-2::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px lightgray;
+  background: #37b0ab;
+  border-radius: 1.3px;
+}
+
+.slide-2::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #37b0ab;
+  cursor: pointer;
+  margin-top: -8px; 
+  
+}
+
+.culture-color {
+    color: #37b0ab;
+}
+
+.slide-3::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px lightgray;
+  background: #2c407b;
+  border-radius: 1.3px;
+}
+
+.slide-3::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #2c407b;
+  cursor: pointer;
+  margin-top: -8px; 
+  
+}
+
+.cuisine-color {
+    color: #2c407b;
+}
+
+.slide-4::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px lightgray;
+  background: #a0545e;
+  border-radius: 1.3px;
+}
+.slide-4::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #a0545e;
+  cursor: pointer;
+  margin-top: -8px; 
+  
+}
+
+.adventure-color {
+    color: #a0545e;
+}
+
+.slide-5::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px lightgray;
+  background: #71d1cf;
+  border-radius: 1.3px;
+}
+
+.slide-5::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #71d1cf;
+  cursor: pointer;
+  margin-top: -8px; 
+  
+}
+
+.art-color {
+    color: #71d1cf;
+}
+
+.slide-6::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px lightgray;
+  background: #ed2d51;
+  border-radius: 1.3px;
+}
+
+.slide-6::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #ed2d51;
+  cursor: pointer;
+  margin-top: -8px; 
+  
+}
+
+.entertainment-color {
+    color: #ed2d51;
+}
+
+.slide-7::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px lightgray;
+  background: #0073ce;
+  border-radius: 1.3px;
+}
+
+.slide-7::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #0073ce;
+  cursor: pointer;
+  margin-top: -8px; 
+}
+
+.hist-color {
+    color: #0073ce;
+}
+
+.slide-8::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #437524;
+  cursor: pointer;
+  margin-top: -8px; 
+  
+}
+.slide-8::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px lightgray;
+  background: #437524;
+  border-radius: 1.3px;
+}
+
+.museums-color {
+    color: #437524;
+}
+
+.slide-9::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #9aac47;
+  cursor: pointer;
+  margin-top: -8px; 
+  
+}
+.slide-9::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px lightgray;
+  background: #9aac47;
+  border-radius: 1.3px;
+}
+
+.nature-color {
+    color: #9aac47;
+}
+
+.slide-10::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #82b5c4;
+  cursor: pointer;
+  margin-top: -8px; 
+  
+}
+.slide-10::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px lightgray;
+  background: #82b5c4;
+  border-radius: 1.3px;
+}
+
+.rr-color {
+    color: #82b5c4;
+}
+
+.slide-11::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #e08a6f;
+  cursor: pointer;
+  margin-top: -8px;
+  
+}
+.slide-11::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px lightgray;
+  background: #e08a6f;
+  border-radius: 1.3px;
+}
+
+.shopping-color {
+    color: #e08a6f;
+}
+
+.slide-12::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #f0b203;
+  cursor: pointer;
+  margin-top: -8px; 
+  
+}
+.slide-12::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px lightgray;
+  background: #f0b203;
+  border-radius: 1.3px;
+}
+
+.sports-color {
+    color: #f0b203;
+}
+
+
+
+
+        /*                      REST OF PROFILE COMPONENT                   */
+
+
+.profile-category-message {
+    margin: 20px;
+    font-size: 0.9em;
+    font-family: 'PT sans', sans-serif;
+}
+
+.profile-category-title {
+    font-size: 1.1em;
+    font-family: 'PT sans', sans-serif;
+}
+
+.row-white {
+    background-color: white;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.row-grey {
+    background-color: #F3F3F3;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.profile-slider-div {
+    display: inline-block;
+    text-align: center;
+    width: 29%; 
+    margin: 2.1%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+                    /*                      NIGHTLIFE TYPES                       */
+
+.checkbox-label {
+    display: inline-block;
+    font-size: .9em;
+    font-family: 'PT sans', sans-serif;
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+.checkboxes {
+    vertical-align: top;
+}
+.barClubLounge, .seeTheTown, .eventsEntertainment {
+    margin-top: 0px !important;
+}
+
+.nightlife-title {
+    font-size: 1.2em;
+    font-family: 'PT sans', sans-serif;
+    margin-left: 2.5%;
+    line-height: .6em;
+}
+
+
+.adult-checkbox {
+    display: inline-block;
+    margin-left: 2.5%;
+    vertical-align: middle;
+}
+
+.family-checkbox {
+    float: right;
+    margin-right: 10%;
+}
+
+
+                /*                      SEARCH BAR                                */
+
+.searchbar {
+    margin: 25px;
+    margin-top: 1px;
+}
+.searchbar input:focus {
+    outline: none;
+}
+
+.searchbar input {
+    border-bottom: 2px solid lightgray;
+    border-top: 0px solid white;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+    padding: 10px;
+    padding-bottom: 10px;
+    width: 100% !important;
+}
+
+
+                /*                      NAV BAR                         */
+
+.dropdown-menu {
+    width: 300px;
+}
+
+.navbar-brand {
+    margin-top: 5px;
+}
+.navbar-nav > li > a {
+    padding-top:15px !important; 
+    padding-bottom:10px !important;
+}
+
+.navbar {
+    height:60px !important;
+    padding-top: 5px !important;
+    margin-bottom: 40px !important;
+}
+
+.dropdown-locations {
+    font-size: 14px;
+}
+
+
+
+                    /*                      HEADER                        */
+
+.header {
+    text-align: center;
+    background-color: white;
+}
+
+.header-title {
+    margin-bottom: 20px;
+    font-family: 'PT sans', sans-serif;
+}
+
+.light-grey-link {
+    color: lightgray;
+    font-size: 1.2em;
+    margin-bottom: 300px;
+}
+
+.horizontal-break {
+    margin-bottom: 0px !important;
+    margin-top: 30px; 
+    height: 7px;
+    border: 0;
+    box-shadow: inset 0 7px 7px -7px rgba(96, 96, 96, 0.5);
+}
+
+
+
+                    /*                      FOOTER                        */
+
+.footer {
+    border-top: 3px solid #E0E0E0;
+    height: 73px;
+    padding-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+.links {
+    margin-left: 1.25%;
+}
+.footer-link {
+    font-size: .9em;
+    font-family: 'PT sans', sans-serif;
+    color: #999;
+    display: inline-block;
+    padding: 2px;
+}
+
+.bottom-links {
+    margin-top: -20px;
+}
+
+
+
+
+
+
+
+                    /*                      PROFILE PICKER                        */
+
+.profile-picker, .preferences, .refine {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.profile-icon {
+    width: 16%;
+    height: auto;
+}
+
+
+                    /*                      MAP                       */
+
+.leaflet-container {
+    height: 1450px;
+    width: 100%;
+}
+
+
+                    /*                      LEFT / RIGHT CONTENT                    */
+.right-content, .left-content {
+    width: 49.5%;
+    height: 100%;
+    display: inline-block;
+    /*margin: 10px;*/
+    vertical-align: top;
+    margin-top: -7px;
+}
+
+.right-content {
+    width: 53% !important;
+    margin-right: -40px;
+    margin-top: -6px !important;
+}
+
+
+
+.left-content-titles {
+    font-size: 1.6em;
+    font-family: 'PT sans', sans-serif;
+    color: dimgray;
+}
+
+
+
+
+                    /*                      REFINE                        */
+
+.refine-button {
+    border: none;
+    border-radius: 4px;
+    background-color: #808080;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    font-family: 'PT sans', sans-serif;
+    padding: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 2px;
+}
+
+.refine-hr {
+    margin-top: 40px;
+    width: 95%;
+}
+
