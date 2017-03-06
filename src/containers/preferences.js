@@ -22,6 +22,7 @@ class Preferences extends Component {
   }
     
     render() {
+        const { budget, pace } = this.props.preferences
         return (
             <div className="preferences">
                 <p className="left-content-titles">Adjust your preferences:</p>
@@ -31,7 +32,7 @@ class Preferences extends Component {
                     className="pref-slider budget-slider"
                     onInput={this.handleOnChange}
                     type="range"
-                    value={this.props.preferences.budget}
+                    value={budget}
                     step={1}
                     min={0}
                     max={9} />
@@ -46,7 +47,7 @@ class Preferences extends Component {
                     className="pref-slider pace-slider"
                     onInput={this.handleOnChange}
                     type="range"
-                    value={this.props.preferences.pace}
+                    value={pace}
                     step={1}
                     min={0}
                     max={9} />

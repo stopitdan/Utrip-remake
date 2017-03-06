@@ -59,7 +59,6 @@ class NightlifeTypes extends Component {
 }
 
 function mapStateToProps(state) {
-    console.log(state);
     return {
         barClubLounge: state.nightlifeTypes.barClubLounge,
         eventsEntertainment: state.nightlifeTypes.eventsEntertainment,

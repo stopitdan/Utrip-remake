@@ -33,7 +33,6 @@ class ProfilePicker extends Component {
                 this.props.activeProfile = "luxury"
                 break;
         }
-        console.log(this.props.activeProfile)
     }
 
 
@@ -54,7 +53,6 @@ class ProfilePicker extends Component {
 }
 
 function mapStateToProps(state) {
-    console.log(state.activeProfile)
     return {
         activeProfile: state.activeProfile
     }

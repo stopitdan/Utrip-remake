@@ -11,11 +11,14 @@ class ProfileSettings extends Component {
     }
 
     handleOnChange = (v) => {
+        const { mustsee, culture } = this.props.profileSettings
+        console.log(mustsee.message);
         try {
+        
             if(v.target.className == "slide-1") {
                     if(v.target.value <= 1) {
-                        this.props.profileSettings.mustsee.val = v.target.value;
-                        this.props.profileSettings.mustsee.message = "I'm a Trailblazer"
+                        mustsee.val = v.target.value;
+                        mustsee.message = "I'm a Trailblazer"
                     }
                     if(v.target.value == 2 || v.target.value == 3){
                         this.props.profileSettings.mustsee.val = v.target.value, 
@@ -276,20 +279,23 @@ class ProfileSettings extends Component {
                             this.props.profileSettings.sports.message = "Live for Sports!" 
                     }
                 }
+                
             } catch(err) {
                 console.log(err)
         } 
+        
   }
 
     render() {
+        const { mustsee, culture } = this.props.profileSettings
         return (
             <div className="your-profile">
                 <p className="pref-title">Your Traveler Profile</p>
                 <div className="row-grey">
                     <div className="profile-slider-div">
                         <p className="profile-category-title mustsee-color">Must See</p>
-                        <Range className="slide-1" onInput={this.handleOnChange} type="range" value={this.props.profileSettings.mustsee.val} step={1} min={0} max={9} />
-                        <p className="profile-category-message mustsee-color">{this.props.profileSettings.mustsee.message}</p>
+                        <Range className="slide-1" onInput={this.handleOnChange} type="range" value={mustsee.val} step={1} min={0} max={9} />
+                        <p className="profile-category-message mustsee-color">{mustsee.message}</p>
                     </div>
                     <div className="profile-slider-div">
                         <p className="profile-category-title culture-color">Culture</p>
